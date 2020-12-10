@@ -22,7 +22,9 @@ class RotatedPolygon extends AbstractPolygon implements IPolygon {
 
     @Override
     public IPolygon rotate(double radians) {
-        return null;
+        
+        return new RotatedPolygon(base, 
+                this.radians + radians);
     }
 
     @Override
